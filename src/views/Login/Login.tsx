@@ -42,7 +42,7 @@ const styles = (theme: Theme) => createStyles({
     backgroundColor: '#fff',
     padding: '20px',
     borderRadius: '5px',
-    width: '70%',
+    width: '91%',
     [theme.breakpoints.up("md")]: {
       width: '50%',
     },
