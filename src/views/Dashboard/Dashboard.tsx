@@ -519,6 +519,7 @@ export class Dashboard extends Component<Props> {
 
       // }
 
+      
       let activeItems = [];
       let activeJuniorItems = [];
       let transferItems = [];
@@ -903,7 +904,7 @@ export class Dashboard extends Component<Props> {
         <div className="main-container">
           <CssBaseline />
           <Typography className = "temp_dashboard" variant="h5" gutterBottom align="left" onClick={this.loadDashboard}>
-                      <ArrowBackIcon></ArrowBackIcon> Back
+                      <ArrowBackIcon></ArrowBackIcon>
                   </Typography>
           <Drawer
             className="drawer"
