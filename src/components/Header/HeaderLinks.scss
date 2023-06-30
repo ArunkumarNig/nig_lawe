@@ -147,7 +147,11 @@ margin-left: 30px;                }
     }
 
 }
-
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .MuiGrid-root.MuiGrid-container.MuiGrid-align-items-xs-center.MuiGrid-grid-xs-10{
+            margin-left: 86px;
+          }
+}
 
 
 
