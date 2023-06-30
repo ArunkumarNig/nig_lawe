@@ -902,7 +902,7 @@ else
                                 <div className="col-sm-11 d-flex justify-content-start">
                                   <ListItem onClick={(eve) => {
                                     handleNotiMessage(eve, item);
-                                  }} button className="d-flex justify-content-space-around" >
+                                  }} button className="d-flex justify-content-space-around ml-5" >
                                     <ListItemText primary={item?.fromName}
                                       secondary={
                                         <React.Fragment>
@@ -962,7 +962,7 @@ else
                               </ListItemAvatar>
                             </div>
                             <div className="col-sm-11 d-flex justify-content-start">
-                              <ListItem button className="d-flex justify-content-space-around">
+                              <ListItem button className="d-flex justify-content-space-around ml-5">
                                 <ListItemText primary={item.taskName}
                                   secondary={
                                     <React.Fragment>
@@ -1021,7 +1021,7 @@ else
                               </ListItemAvatar>
                             </div>
                             <div className="col-sm-11 d-flex justify-content-start">
-                              <ListItem button className="d-flex justify-content-space-around">
+                              <ListItem button className="d-flex justify-content-space-around ml-5">
                                 <ListItemText
                                   primary={
                                     <React.Fragment>
@@ -1056,7 +1056,7 @@ else
                                                 <div className="col-sm-1 d-flex justify-content-start mt-3">
 
                                                         <Button variant="contained" className={item?.appointmentStatus == AppointmentStatus.REJECTED ? classes.buttonAttribute: "addnotes"} 
-                                                              style={{ backgroundColor: "#292734" }} 
+                                                              style={{ backgroundColor: "#292734",marginLeft: "24px" }} 
                                                               onClick={(eve) => {
                                                               item?.appointmentStatus == AppointmentStatus.REJECTED ?
                                                               ""

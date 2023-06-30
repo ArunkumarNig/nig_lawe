@@ -262,6 +262,11 @@
 // }
 
 // }
+@media only screen and (min-width: 600px){
+  .temp_dashboard{
+    display: none;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 600px) {
 //   .header-menu span{
 //       display: block;
@@ -331,28 +336,36 @@ width: 8rem;
   // }
 // }
 
-div[class*=active-btn]{
-  .MuiDrawer-root.MuiDrawer-docked.drawer{
-    display: none !important;
-  }
+// div[class*=active-btn]{
+//   .MuiDrawer-root.MuiDrawer-docked.drawer{
+//     display: none !important;
+//   }
   
 
-  }
+//   }
 
+// .temp_dashboard:not(.main-container.active-btn){
+//   display: none;
+// }
+// .temp_dashboard:has(.main-container.active-btn){
+//   display: block;
+// }
 div .MuiDrawer-root.MuiDrawer-docked.drawer:has(div.active-btn){
   display: none; 
+}
+.temp_dashboard{
+  float: right;
+  padding-right: 30px;
 }
 // div .MuiDrawer-root.MuiDrawer-docked.drawer[style*='display: none;']{
 
 // }
 
-.temp_dashboard:not(div.active-btn){
-  display: none;
-}
-div .MuiDrawer-root.MuiDrawer-docked.drawer:has(div.active-btn){
-  div .temp_dashboard:not(div.active-btn){
-    display: block !important;
-  }
-}
+
+// div .MuiDrawer-root.MuiDrawer-docked.drawer:has(div.active-btn){
+//   div .temp_dashboard:not(div.active-btn){
+//     display: block !important;
+//   }
+// }
 
 } 
