@@ -63,8 +63,55 @@
     .MuiInputBase-formControl{
         width:6rem;
     }
+    .MuiInputBase-root.MuiOutlinedInput-root.Mui-disabled.Mui-disabled.MuiInputBase-formControl{
+        width: 18rem!important;
+    }
+    .MuiInputBase-root.MuiOutlinedInput-root.my-1.Mui-disabled.Mui-disabled{
+      width: 18rem;
+    }
+    .MMuiInputBase-root .MuiOutlinedInput-root .my-3 .Mui-disabled .Mui-disabled{
+        width: 25rem;
+      }
+    .MuiInputBase-root.MuiOutlinedInput-root.my-3.Mui-disabled.Mui-disabled{
+      .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.Mui-disabled.Mui-disabled.Mui-disabled{
+        width:15rem!important;
+      }
+    }
+    .MuiInputBase-root.MuiOutlinedInput-root.my-3.Mui-disabled.Mui-disabled{
+        .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.Mui-disabled.Mui-disabled.Mui-disabled{
+            width:15rem!important; 
+        }
+    }
     // .MuiInputBase-root.MuiOutlinedInput-root.my-3{
     //     width: 2rem;
     // }
 } 
-
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .MuiInputBase-root.MuiOutlinedInput-root.my-1.Mui-disabled.Mui-disabled{
+        width: 11.5rem;
+      }
+      .MuiInputBase-root .MuiOutlinedInput-root .my-3 .Mui-disabled .Mui-disabled{
+        width: 11.5rem;
+      }
+      .MuiInputBase-root.MuiOutlinedInput-root.my-3.Mui-disabled.Mui-disabled{
+        .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.Mui-disabled.Mui-disabled.Mui-disabled{
+            width:500px!important; 
+        }
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .MuiInputBase-root.MuiOutlinedInput-root.my-1.Mui-disabled.Mui-disabled{
+        width: 34rem;
+      }
+      .MuiInputBase-root .MuiOutlinedInput-root .my-3 .Mui-disabled .Mui-disabled{
+        width: 34rem;
+      }
+      .MuiInputBase-root.MuiOutlinedInput-root.my-3.Mui-disabled.Mui-disabled{
+        .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.Mui-disabled.Mui-disabled.Mui-disabled{
+            width:500px!important; 
+        }
+    }
+ .MuiInputBase-root.MuiOutlinedInput-root.Mui-disabled.Mui-disabled.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd{
+    width:34rem!important;
+ }
+}

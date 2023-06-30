@@ -837,7 +837,7 @@ export function Profile(props: Props) {
                                 </InputLabel>
                                 <Select
                                     className="my-1"
-                                    style={{ width: "543px" }}
+                                    style={{ width: "" }}
                                     defaultValue={user.gender}
                                     disabled={edit ? false : true}
                                     variant="outlined"
