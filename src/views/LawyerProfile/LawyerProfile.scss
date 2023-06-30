@@ -1,0 +1,47 @@
+
+.profile-container-first {
+    margin-top: 62px;
+    background-color: #292734;
+    h5 {
+        text-transform: unset;
+        color: #FFFFFF;
+        font-family: Titillium;
+        // font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 37px;
+        text-align: center;
+    }
+    h6 {
+        text-transform: unset;
+        color: #FFC602;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+.button-container {
+    text-align: center;
+    padding: 10px;
+    Button {
+        height: 40px;
+        font-size: 0.975rem;
+        text-transform: none;
+        color: #000;
+        background-color: #FFC602;
+        &:hover {
+            color: #000;
+            background-color: #FFC602;
+        }
+    }
+}
+.profile-head-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -82px;
+    margin-right: 100px;
+    .profile-name-text {
+        margin-left: -1.3rem;
+    }
+}

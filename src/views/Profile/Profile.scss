@@ -1,0 +1,70 @@
+.profile-head-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1px;
+    margin-right: 100px;
+    .profile-name-text {
+        margin-left: -1.3rem;
+    }
+}
+
+// @media only screen and (min-width: 1024px) {
+//     .MuiBox-root.MuiBox-root-47{
+//     display: none;
+//     }
+//     .MuiBox-root.MuiBox-root-51{
+//         // margin-top: 80px;
+//         display: block;
+//     }
+//     // .MuiBox-root.MuiBox-root-49{
+//     //     display: blok;
+//     // }
+
+// }
+// @media only screen and (min-width: 768px) and (max-width: 960px) {
+//     .MuiBox-root.MuiBox-root-35{
+//     display: none;
+//     }
+//     .makeStyles-appResponsive-19 .header-menu span{
+//         // display: inline-grid;
+//         // float: left;
+//         display: block;
+//         // margin: 0px;
+//     }
+//     .makeStyles-appResponsive-19 .header-menu span label{
+      
+//         margin-left: 30px;
+//     } 
+//     .MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorPrimary{
+//         padding-top: 20px;
+//     }
+//     .MuiBadge-badge.MuiBadge-anchorOriginTopRightRectangle.MuiBadge-colorSecondary{
+//         margin-top: 5;
+//     }
+// }
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    // .MuiBox-root.MuiBox-root-35{
+    // display: none;
+    // }
+    // .makeStyles-appResponsive-19 .header-menu span{
+    //     display: block;
+    // }
+    // .makeStyles-appResponsive-19 .header-menu span label{
+      
+    //     margin-left: 30px;
+    // } 
+    .MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorPrimary{
+        padding-top: 20px;
+    }
+    .MuiBadge-badge.MuiBadge-anchorOriginTopRightRectangle.MuiBadge-colorSecondary{
+        margin-top: 5;
+    }
+    .MuiInputBase-formControl{
+        width:6rem;
+    }
+    // .MuiInputBase-root.MuiOutlinedInput-root.my-3{
+    //     width: 2rem;
+    // }
+} 
+
