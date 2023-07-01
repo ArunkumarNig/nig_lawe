@@ -54,6 +54,12 @@
       
     //     margin-left: 30px;
     // } 
+    body{
+
+      overflow-x: scroll!important;
+      overflow-y:scroll!important;
+      // flex-wrap: wrap!important;
+    }
     .MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorPrimary{
         padding-top: 20px;
     }
@@ -127,8 +133,11 @@
             width:500px!important; 
         }
     }
-    .container{
-      padding-left: 89px!important;
+    body{
+
+      overflow-x: scroll!important;
+      overflow-y:scroll!important;
+      // flex-wrap: wrap!important;
     }
     .MuiInputBase-root.MuiOutlinedInput-root.my-1.Mui-disabled.Mui-disabled{
         width: 34rem!important;
@@ -153,6 +162,12 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  body{
+
+    overflow-x: scroll!important;
+    overflow-y:scroll!important;
+    // flex-wrap: wrap!important;
+  }
     .MuiInputBase-root.MuiOutlinedInput-root.my-1.Mui-disabled.Mui-disabled{
         width: 34rem;
       }

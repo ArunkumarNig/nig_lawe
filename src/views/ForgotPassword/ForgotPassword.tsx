@@ -32,7 +32,7 @@ const styles = (theme: Theme) => createStyles({
     backgroundColor: '#fff',
     padding: '20px',
     borderRadius: '5px',
-    width: '50%',
+    width: '95%',
     maxWidth: '600px'
   },
   avatar: {
