@@ -60,6 +60,9 @@
       overflow-y:scroll!important;
       // flex-wrap: wrap!important;
     }
+    .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd{
+      width: 14rem!important;
+    }
     .MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorPrimary{
         padding-top: 20px;
     }
@@ -143,7 +146,7 @@
         width: 34rem!important;
     }
     .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd{
-      width: 34rem!important;
+      width: 35rem!important;
     }
     .MuiInputBase-root.MuiOutlinedInput-root.my-1{
       .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input{
@@ -183,7 +186,7 @@
     width:34rem!important;
  }
  .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd{
-  width:34rem!important;
+  width:35rem!important;
  }
  .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input{
     width:31rem!important;
