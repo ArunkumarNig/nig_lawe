@@ -69,19 +69,48 @@
     .MuiInputBase-root.MuiOutlinedInput-root.my-1.Mui-disabled.Mui-disabled{
       width: 18rem;
     }
-    .MMuiInputBase-root .MuiOutlinedInput-root .my-3 .Mui-disabled .Mui-disabled{
+    .MMuiInputBase-root.MuiOutlinedInput-root.my-3.Mui-disabled.Mui-disabled{
         width: 25rem;
       }
     .MuiInputBase-root.MuiOutlinedInput-root.my-3.Mui-disabled.Mui-disabled{
       .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.Mui-disabled.Mui-disabled.Mui-disabled{
-        width:15rem!important;
+        width:15rem;
       }
     }
     .MuiInputBase-root.MuiOutlinedInput-root.my-3.Mui-disabled.Mui-disabled{
         .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.Mui-disabled.Mui-disabled.Mui-disabled{
-            width:15rem!important; 
+            width:17rem!important; 
         }
     }
+    .MuiFormControl-root.MuiTextField-root.my-4{
+      .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-formControl{
+        width: 17rem;
+      }
+        
+    }
+    .MuiInputBase-root.MuiOutlinedInput-root.my-1{
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input{
+          width:14rem!important; 
+      }
+  }
+  .MuiInputBase-root.MuiOutlinedInput-root.my-3{
+    width:17rem!important;
+  #mui-component-select-state{
+     
+  }
+}
+  
+  // .MuiFormLabel-root.MuiInputLabel-root.mb-1.MuiInputLabel-animated,.MuiInputBase-root.MuiOutlinedInput-root.my-3{
+  //   .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input{
+  //        padding-right: 20px!important;
+  //   }
+
+    
+
+  // }
+
+    
+     
     // .MuiInputBase-root.MuiOutlinedInput-root.my-3{
     //     width: 2rem;
     // }
@@ -98,7 +127,31 @@
             width:500px!important; 
         }
     }
+    .container{
+      padding-left: 89px!important;
+    }
+    .MuiInputBase-root.MuiOutlinedInput-root.my-1.Mui-disabled.Mui-disabled{
+        width: 34rem!important;
+    }
+    .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd{
+      width: 34rem!important;
+    }
+    .MuiInputBase-root.MuiOutlinedInput-root.my-1{
+      .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input{
+        width:31rem;
+        #mui-component-select-gender{
+
+        }
+      }
+
+    }
 }
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .container{
+    padding-left: 55px!important;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
     .MuiInputBase-root.MuiOutlinedInput-root.my-1.Mui-disabled.Mui-disabled{
         width: 34rem;
@@ -113,5 +166,11 @@
     }
  .MuiInputBase-root.MuiOutlinedInput-root.Mui-disabled.Mui-disabled.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd{
     width:34rem!important;
+ }
+ .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd{
+  width:34rem!important;
+ }
+ .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input{
+    width:31rem!important;
  }
 }
