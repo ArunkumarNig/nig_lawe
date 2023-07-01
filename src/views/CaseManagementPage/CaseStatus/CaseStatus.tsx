@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px",
   },
   inputStageField: {
-    width: "60%",
+    width: "80%",
     flex: 4,
     textTransform: "unset",
     textAlign: "left",
@@ -240,7 +240,7 @@ export function AcceptedStage(props) {
           {props.stage.name}
         </Typography>
       </Box>
-      <div style={{ width: "150px", paddingBottom: "10px", paddingRight: "10px" }} >
+      <div style={{ width: "150px", paddingBottom: "10px", paddingRight: "10px", marginRight:"70px" }} >
         <Box className={classes.stageInput}>
           <TextField
             disabled={true}

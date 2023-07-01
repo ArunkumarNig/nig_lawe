@@ -389,7 +389,7 @@
     // margin: "0.5rem 0",
   }
   .caseInfoSubContainer{
-    display: flex !important;
+    display: block !important;
     align-items: unset;
     padding: 5px 10px;
     width: "100%";
@@ -430,6 +430,12 @@
 justify-content: unset;
   margin: "0.5rem 0";
 }
+.inputStageField{
+  width: 38rem !important;
+  flex: 4;
+  text-transform: unset;
+  text-align: left;
+}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -443,7 +449,7 @@ justify-content: unset;
     width: "100%";
   }
   .inputStageField{
-  // width: "80%";
+  width: "80%";
   flex: 4;
   text-transform: unset;
   text-align: left;
