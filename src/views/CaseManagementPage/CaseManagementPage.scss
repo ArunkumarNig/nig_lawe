@@ -355,31 +355,104 @@
 .textfield {
   width: 100%,
 }
-@media screen and (max-width: 600px) {
-  .casemanagement-container-second .casemanagement-card-container .user-info-container .name-title-container{
-    display: flex;
-    box-shadow: unset;
-    padding: 0 0px;
-    flex-direction: column;
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .stageCheck {
+    display: block !important;
   }
-}
-@media screen and (max-width: 768px) {
-  .casemanagement-container-second .casemanagement-card-container .user-info-container .name-title-container .content-container {
-    color: #292734;
-    margin-left: 2rem;
-}
-}
-@media screen and (max-width: 600px) {
-  .casemanagement-container-second .casemanagement-card-container .user-info-container .name-title-container .content-container {
-    color: #292734;
-    margin-left: 2rem;
-}
-}
-@media screen and (max-width: 768px) {
-  .makeStyles-caseInfoSubContainer-147{
-    display: flex;
-    box-shadow: unset;
-    padding: 0 0px;
-    flex-direction: column;
+  .caseInfoSubContainer{
+    display: block !important;
+    // align-items: unset;
+    padding: 5px 10px;
+    width: "100%";
   }
+  .stageCheckField{
+    // display: flex;
+    align-items: center;
+  justify-content: unset;
+    margin: "0.5rem 0";
+  }
+    .casemanagement-container-second .casemanagement-card-container .user-info-container .name-title-container  {
+    // color: #292734;
+    margin-left: 2rem;
+    display: block !important;
 }
+.name-title-container .content-container{
+  margin-left: 0rem !important;
+  margin-top: 1rem;
+}
+}
+@media only screen and (min-width: 620px) and (max-width: 768px) {
+  .stageCheck {
+    display: flex !important;
+    align-items: center;
+    justify-content: unset;
+    // margin: "0.5rem 0",
+  }
+  .caseInfoSubContainer{
+    display: flex !important;
+    align-items: unset;
+    padding: 5px 10px;
+    width: "100%";
+  }
+  .casemanagement-container-second  {  
+    .casemanagement-card-container{
+      .user-info-container
+      .name-title-container{
+      .content-container{
+        margin-left : 1rem;      
+      }
+    }}
+    .user-info-container {
+      .name-title-container {
+        display: block !important;
+      }
+    }
+    .name-title-container{
+      .MuiAvatar-circular{
+        margin-bottom: 30px;
+      }
+    }
+
+}
+.casemanagement-container-second.casemanagement-card-container.user-info-container{
+  justify-content: center !important;
+}
+
+.inputStageField{
+  width: 70% !important;
+  flex: 4;
+  text-transform: unset;
+  text-align: left;
+}
+.stageCheckField{
+  display: flex;
+  align-items: center;
+justify-content: unset;
+  margin: "0.5rem 0";
+}
+}
+
+@media only screen and (min-width: 1024px) {
+  .stageCheck {
+    display: flex !important;
+  }
+  .caseInfoSubContainer{
+    display: flex !important;
+    align-items: unset;
+    padding: 5px 10px;
+    width: "100%";
+  }
+  .inputStageField{
+  // width: "80%";
+  flex: 4;
+  text-transform: unset;
+  text-align: left;
+}
+.stageCheckField{
+  display: flex;
+  align-items: center;
+justify-content: unset;
+  margin: "0.5rem 0";
+}
+}
+

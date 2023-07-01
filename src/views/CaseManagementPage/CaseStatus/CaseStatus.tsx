@@ -34,12 +34,12 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "none",
     // width: "70%",
   },
-  caseInfoSubContainer: {
-    display: "flex",
-    alignItems: "unset",
-    padding: "5px 10px",
-    width: "100%",
-  },
+  // caseInfoSubContainer: {
+  //   display: "flex",
+  //   alignItems: "unset",
+  //   padding: "5px 10px",
+  //   width: "100%",
+  // },
   previewContainer: {
     marginBottom: "2rem",
     display: "flex",
@@ -87,6 +87,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px",
   },
   inputStageField: {
+    width: "60%",
     flex: 4,
     textTransform: "unset",
     textAlign: "left",
@@ -103,7 +104,7 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
   },
   stageContainer: {
-    display: "flex",
+    // display: "flex",
     margin: "1rem 0",
   },
   stageBox1: {
@@ -111,8 +112,8 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "1rem",
   },
   stageCheckField: {
-    display: "flex",
-    alignItems: "center",
+    // display: "flex",
+    // alignItems: "center",
     justifyContent: "unset",
     margin: "0.5rem 0",
   },
@@ -120,7 +121,7 @@ const useStyles = makeStyles((theme) => ({
     // flex: 3,
     textTransform: "unset",
     textAlign: "left",
-    width: "150px",
+    width: "250px",
     // marginRight: "",
     // backgroundColor:"red"
 
@@ -131,7 +132,7 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "none",
     color: "#292734",
     backgroundColor: "#EFE2B5",
-    width: "200px",
+    width: "290px",
     "&:hover": {
       color: "#292734",
       backgroundColor: "#EFE2B5",
@@ -148,7 +149,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#292734",
     backgroundColor: "#CEF8C9",
     justify: "d-flex justify-content-start",
-    width: "200px",
+    width: "290px",
     "&:hover": {
       color: "#292734",
       backgroundColor: "#CEF8C9",
@@ -163,7 +164,7 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "none",
     color: "#292734",
     backgroundColor: "#ffc9cb",
-    width: "200px",
+    width: "290px",
     "&:hover": {
       color: "#292734",
       backgroundColor: "#ffc9cb",
@@ -204,12 +205,12 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "unset",
     marginRight: "2rem",
   },
-  stageCheck: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "unset",
-    // margin: "0.5rem 0",
-  },
+  // stageCheck: {
+  //   display: "flex",
+  //   alignItems: "center",
+  //   justifyContent: "unset",
+  //   // margin: "0.5rem 0",
+  // },
 }));
 
 export function AcceptedStage(props) {
@@ -231,13 +232,15 @@ export function AcceptedStage(props) {
   }
 
   return (
-    <Box className={classes.stageCheck}>
+    // <Box className={classes.stageCheck}>
+    <Box className="stageCheck">
+
       <Box className={classes.stageInput} style={{ paddingBottom: "10px" }}>
         <Typography gutterBottom >
           {props.stage.name}
         </Typography>
       </Box>
-      <div style={{ width: "150px", paddingBottom: "10px", paddingRight: "10px" }} className="mx-3">
+      <div style={{ width: "150px", paddingBottom: "10px", paddingRight: "10px" }} >
         <Box className={classes.stageInput}>
           <TextField
             disabled={true}
@@ -721,7 +724,9 @@ export const _CaseStatus = (props: any) => {
   return (
     <div className={classes.root}>
       <Paper className={classes.caseInfoContainer}>
-        <Box className={classes.caseInfoSubContainer}>
+        {/* <Box className={classes.caseInfoSubContainer}> */}
+        <Box className="caseInfoSubContainer">
+
           <Typography
             className={classes.label}
             variant="subtitle1"
@@ -739,7 +744,8 @@ export const _CaseStatus = (props: any) => {
             {title}
           </Typography>
         </Box>
-        <Box className={classes.caseInfoSubContainer}>
+        {/* <Box className={classes.caseInfoSubContainer}> */}
+        <Box className="caseInfoSubContainer">
           <Typography
             className={classes.label}
             variant="subtitle1"
@@ -757,7 +763,8 @@ export const _CaseStatus = (props: any) => {
             {description}
           </Typography>
         </Box>
-        <Box className={classes.caseInfoSubContainer}>
+        {/* <Box className={classes.caseInfoSubContainer}> */}
+        <Box className="caseInfoSubContainer">
           <Typography
             className={classes.label}
             variant="subtitle1"
@@ -775,7 +782,8 @@ export const _CaseStatus = (props: any) => {
             {product}
           </Typography>
         </Box>
-        <Box className={classes.caseInfoSubContainer}>
+        {/* <Box className={classes.caseInfoSubContainer}> */}
+        <Box className="caseInfoSubContainer">
           <Typography
             className={classes.label}
             variant="subtitle1"
@@ -795,7 +803,8 @@ export const _CaseStatus = (props: any) => {
         </Box>
         {(caseStatus === "accepted" || caseStatus === "archieved") && (
           <React.Fragment>
-            <Box className={classes.caseInfoSubContainer}>
+            {/* <Box className={classes.caseInfoSubContainer}> */}
+            <Box className="caseInfoSubContainer">
               <Typography
                 className={classes.label}
                 variant="subtitle1"
@@ -804,7 +813,8 @@ export const _CaseStatus = (props: any) => {
               >
                 Mutually agreed Stages
               </Typography>
-              <Box className={classes.inputStageField}>
+              {/* <Box className={classes.inputStageField}> */}
+              <Box className="inputStageField">
                 <Typography variant="body2" display="block" gutterBottom>
                   ( Case management work flow would use these phases for notes,
                   comments, reminders for payment between Client / Lawyer)

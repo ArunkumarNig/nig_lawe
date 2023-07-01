@@ -262,10 +262,22 @@
 // }
 
 // }
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) {
   .temp_dashboard{
     display: none;
   }
+  // .stageCheck {
+  //   display: "flex";
+  //   align-items: "center";
+  //   justify-content: "unset";
+  //   // margin: "0.5rem 0",
+  // }
+  // .caseInfoSubContainer {
+  //   display: "flex";
+  //   align-items: "unset";
+  //   padding: 5px 10px;
+  //   width: "100%";
+  // }
 }
 @media only screen and (min-width: 320px) and (max-width: 600px) {
 //   .header-menu span{
@@ -298,7 +310,7 @@
 margin-right: 2rem;
   }
   .MuiButtonBase-root.MuiButton-root.MuiButton-contained.detail-btn{
-width: 8rem;
+width: 13rem;
   }
   .card-container .warning-text-container{
     text-align: left;
@@ -311,45 +323,7 @@ width: 8rem;
     margin-right: 2rem;
 
   }
-//   .reMode_hover:not(.reMode_selected):hover 
-// {
-//    background-color: #f0ac00;
-// }
 
-
-
-// .MuiDrawer-root.MuiDrawer-docked{
-//   .MuiPaper-root.MuiDrawer-paper.drawerPaper{
-    
-// ul.MuiList-root{
-
-  div[class*=MuiButtonBase-root]{
-      
-    // .MuiPaper-root.MuiDrawer-paper.drawerPaper{
-      
-    // }
-    // display: none !important;
-    }
-    
-// }
-
-  // }
-// }
-
-// div[class*=active-btn]{
-//   .MuiDrawer-root.MuiDrawer-docked.drawer{
-//     display: none !important;
-//   }
-  
-
-//   }
-
-// .temp_dashboard:not(.main-container.active-btn){
-//   display: none;
-// }
-// .temp_dashboard:has(.main-container.active-btn){
-//   display: block;
-// }
 div .MuiDrawer-root.MuiDrawer-docked.drawer:has(div.active-btn){
   display: none; 
 }
@@ -357,15 +331,5 @@ div .MuiDrawer-root.MuiDrawer-docked.drawer:has(div.active-btn){
   float: right;
   padding-right: 30px;
 }
-// div .MuiDrawer-root.MuiDrawer-docked.drawer[style*='display: none;']{
-
-// }
-
-
-// div .MuiDrawer-root.MuiDrawer-docked.drawer:has(div.active-btn){
-//   div .temp_dashboard:not(div.active-btn){
-//     display: block !important;
-//   }
-// }
 
 } 
