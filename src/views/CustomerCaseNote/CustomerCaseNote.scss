@@ -337,6 +337,13 @@
         flex-direction: column;
 
     }
+    .MuiInputBase-root.MuiOutlinedInput-root.Mui-disabled.Mui-disabled.MuiInputBase-formControl.MuiInputBase-marginDense.MuiOutlinedInput-marginDense{
+         width:11rem!important;
+        .MuiInputBase-input.MuiOutlinedInput-input.Mui-disabled.Mui-disabled.MuiInputBase-inputMarginDense.MuiOutlinedInput-inputMarginDense{
+            width:9rem!important;
+
+        }
+    }
   }
   @media only screen and (max-width: 600px) {
     .connent-container-second .card-container .case-info-container .case-info-sub-container .picker-container .MuiFormControl-marginNormal {
