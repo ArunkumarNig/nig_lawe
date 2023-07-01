@@ -39,10 +39,10 @@ const useStyles = makeStyles(() => ({
     padding:"15px 10px",
     // marginLeft:"8rem!important",
   },
-  searchFieldContainer:{
-    display: "flex",
-    margin: "20px 0",
-  }, 
+  // searchFieldContainer:{
+  //   display: "flex",
+  //   margin: "20px 0",
+  // }, 
   marginTopEmpty:{
     marginTop: "0 !important",
   },
@@ -54,6 +54,7 @@ const useStyles = makeStyles(() => ({
     lineHeight: "0.2 !important",
   },
   selectInput:{
+    // display: "block",
     "& select": {
       padding: "12px !important",
     } 
@@ -248,7 +249,9 @@ export default function FixedContainer(props: Props) {
             </Typography>
             {isFindLawyer &&
               <Paper elevation={3} className={classes.searchCardCantainer} >
-                <div className={`${classes.searchFieldContainer} ${classes.marginTopEmpty}`}>
+                {/* <div className={`${classes.searchFieldContainer} ${classes.marginTopEmpty}`}> */}
+                <div className="searchFieldContainer">
+
                   <FormControl variant="outlined" className={classes.textField}>
                     <InputLabel error={!isValidProduct} id="product-select-label" className={classes.selectLabel}>Product*</InputLabel>
                     <Select
@@ -292,7 +295,8 @@ export default function FixedContainer(props: Props) {
                     </Select>
                   </FormControl>
                 </div>
-                <div className={`${classes.searchFieldContainer} ${classes.marginRight10}`}>
+                {/* <div className={`${classes.searchFieldContainer} ${classes.marginRight10}`}> */}
+                <div className="searchFieldContainer" style={{marginRight:"10px"}}>
                   <PracticingCourtAutoSuggest
                     label='Court*'
                     variant="outlined"
@@ -303,18 +307,21 @@ export default function FixedContainer(props: Props) {
                     placeholder="Court"
                   />
                 </div>
-                <div className={classes.searchFieldContainer}>
+                <div className="searchFieldContainer">
+                {/* <div className={classes.searchFieldContainer}> */}
                   {/* <TextField error={!isValidDescription} onChange={handleDescriptionChange} size="small" className="text-field" multiline rows={3} label="Description of issue*" variant="outlined" /> */}
                   <TextField onChange={handleDescriptionChange} size="small" className={classes.textField} multiline rows={3} label="Description of issue" variant="outlined" />
                 </div>
-                <div className={classes.searchFieldContainer}>
+                <div className="searchFieldContainer">
+                {/* <div className={classes.searchFieldContainer}> */}
                   <Grid container>
                       <Grid item xs={12} sm={7}>
                           <TextField size="small" className={classes.locationTextField} onChange={handleAreaChange} label="Area" placeholder="Area" variant="outlined" />
                       </Grid>
                   </Grid>  
                 </div>
-                <div className={classes.searchFieldContainer}>
+                {/* <div className={classes.searchFieldContainer}> */}
+                <div className="searchFieldContainer">
                   <Grid container>                   
                     
                     <Grid item xs={12} sm={7}>
