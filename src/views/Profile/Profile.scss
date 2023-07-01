@@ -186,9 +186,14 @@
     width:34rem!important;
  }
  .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd{
-  width:35rem!important;
+  width:28rem!important;
  }
  .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input{
     width:31rem!important;
  }
+}
+@media only screen and (min-width:1370px) and (max-width:1605px){
+  .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd{
+    width:35rem!important;
+   }
 }
