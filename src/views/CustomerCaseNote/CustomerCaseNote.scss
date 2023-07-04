@@ -347,7 +347,20 @@
   }
   @media only screen and (max-width: 600px) {
     .connent-container-second .card-container .case-info-container .case-info-sub-container .picker-container .MuiFormControl-marginNormal {
-        margin-top: 52px;
+        margin-top: 6px;
+    }
+    .connent-container-second .card-container .case-info-container .case-info-sub-container .lawyer-acknowledge-container {
+        display: grid;
+        align-items: center;
+        margin-top: 1.5rem;
+        h6 {
+            text-transform: unset;
+            font-size: 1rem;
+            padding-right: 0px;
+        }
+    }
+    .MuiInput-underline{
+        width: fit-content!important;
     }
   }
   @media only screen and (max-width: 600px) {

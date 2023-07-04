@@ -316,6 +316,16 @@ width: 13rem;
     text-align: left;
     padding: 20px 0px;
   }
+  .card-container .ack-container{
+    display: grid;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+  .MuiButton-contained.addnotes{
+     margin-left: 15px;
+
+  }
   .MuiAvatar-root.MuiAvatar-circular.makeStyles-large-67{
     margin-bottom: 25px;
   }
