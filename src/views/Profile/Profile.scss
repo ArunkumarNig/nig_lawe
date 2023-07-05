@@ -170,6 +170,9 @@
   .container{
     padding-left: 55px!important;
   }
+  .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd{
+    width: 17rem!important;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
