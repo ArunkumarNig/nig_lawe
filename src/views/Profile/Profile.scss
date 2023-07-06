@@ -115,6 +115,9 @@
   }
 
 }
+.MuiFormLabel-root.MuiInputLabel-root.mb-1.MuiInputLabel-animated{
+  margin-top: 7px!important;
+}
 
   
   // .MuiFormLabel-root.MuiInputLabel-root.mb-1.MuiInputLabel-animated,.MuiInputBase-root.MuiOutlinedInput-root.my-3{
@@ -166,13 +169,18 @@
 
     }
 }
-@media only screen and (min-width: 375px) and (max-width: 768px) {
+@media only screen and (min-width: 375px) and (max-width: 767px) {
   .container{
     padding-left: 55px!important;
   }
   .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd{
     width: 17rem!important;
   }
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd{
+  width: 17rem;
+}
 }
 
 @media only screen and (min-width: 1024px) {

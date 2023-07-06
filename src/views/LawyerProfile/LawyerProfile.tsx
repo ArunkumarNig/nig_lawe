@@ -155,7 +155,12 @@ export function LawyerProfile(props: Props) {
                 Advocate. {profile.userjson.fName}
               </Typography>
               <Typography className={classes.experience} variant="h5" gutterBottom align="center">
-                Experience: {experience} years  Languages Known: {profile.languageKnow}
+                Experience: {experience} years 
+                 
+              </Typography>
+              <Typography className={classes.experience} variant="h5" gutterBottom align="center">
+                
+                 Languages Known: {profile.languageKnow}
               </Typography>
             </div>
           </Box>

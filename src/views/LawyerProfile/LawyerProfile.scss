@@ -39,9 +39,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -82px;
+    margin-top: -90px!important;
     margin-right: 100px;
     .profile-name-text {
         margin-left: -1.3rem;
     }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+.profile-head-container {
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    margin-top: 37px!important;
+    margin-right: -7px!important;
+    flex-direction: row!important;
+    flex-wrap: wrap!important;
+}
+.profile-container-second{
+    margin-top:-6rem!important;
+}
+.profile-head-container .profile-name-text{
+    margin-left: 0.7rem!important;
+    margin-right: 22px!important;
+
+}
+.MuiTypography-h6{
+    margin-top: -1rem!important;
+    min-width:16rem!important ;
+
+}
+
 }

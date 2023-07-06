@@ -218,13 +218,106 @@
     }    
 }
 
+.sortby{
+    // float:left;
+    // width:100%;
+    display:flex;
+    // flex-direction: column-reverse;
+}
 
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    .sortby{
+        float:left;
+        width:100%;
+        display:flex !important;
+        flex-direction: column-reverse;
+    }
+    .lawyer-container{
+        .MuiGrid-justify-content-xs-center{
+    .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12{
+        margin-right: 0rem!important;
+    
+      }
+    }
+    }
 
+    // .MuiGrid-root.MuiGrid-item.MuiGrid-align-items-xs-flex-end.MuiGrid-grid-xs-3{
+    //     flex-grow: 0!important;
+    
+    // flex-basis: 25%!important;
+    // // width: fit-content!important;
+    // width:116px!important;
+    // // margin-right: 1rem!important;
+    // }
+    .MuiCardContent-root{
+    .MuiGrid-root.MuiGrid-container{
+        // width: 100%!important;
+        display: flex;
+        
+        flex-direction: column!important;
+        flex-wrap: wrap!important;
 
-// @media only screen and (min-width: 768px) and (max-width: 960px) {
-// }
-// @media only screen and (min-width: 960px) and (max-width: 2560px) {
-//     .MuiBox-root.MuiBox-root-168, .MuiBox-root.MuiBox-root-60, .MuiBox-root.MuiBox-root-88{
-//         display: none;
+    }
+    .MuiList-padding{
+        .MuiListItem-gutters{
+            margin-left:-29px;
+        }
+
+    }
+    
+    }
+    .MuiPaper-elevation1{
+        .MuiButtonBase-root.MuiCardActionArea-root{
+        .MuiCardContent-root{
+            padding: 19px!important;
+
+        }
+    }
+
+    }
+    .MuiGrid-root.MuiGrid-item.MuiGrid-align-items-xs-flex-end.MuiGrid-grid-xs-3{
+        max-width: 64px!important;
+        margin:1rem 3px; 
+    }
+//     .MuiFormControl-root.text-field{
+//         width: 28rem;
+//     #sortBy-outlined{
+
 //     }
 // }
+    // .fix-width{
+    //     width: 17rem!important;
+    // }
+    .lawyer-container{
+        .sortby{
+            .MuiGrid-root.MuiGrid-item:last-of-type{
+                .text-field{
+                    .select-input{
+                        width: 250px;
+                    }
+                
+                }
+                // display: none;
+                
+            }
+        }
+    }
+    }
+    @media only screen  and (min-width: 768px) and (max-width: 968px) {
+        .sortby{
+            float:left;
+            width:100%;
+            display:flex !important;
+            flex-direction: column-reverse;
+        }
+
+     
+    }
+    @media only screen  and (min-width: 968px) and (max-width: 1024px) {
+        .MuiGrid-root.MuiGrid-item.MuiGrid-align-items-xs-flex-end.MuiGrid-grid-xs-3{
+            max-width: 64px!important;
+            margin:1rem -2rem!important; 
+        }
+
+     
+    }

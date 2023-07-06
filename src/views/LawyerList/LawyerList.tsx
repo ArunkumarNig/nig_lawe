@@ -446,7 +446,9 @@ export class LawyerList extends Component<Props> {
               </Box>
 
             </Grid>
+            <div className="sortby">
             {itemsToDisplay && itemsToDisplay.length > 0 && (
+              
               <Grid item xs={9} alignItems="center">
                 <Typography component="p" style={{ marginLeft: "2rem", marginTop: "1rem", width: "50%", float: "left" }}>
                   You can select upto 10 Lawyers to connect
@@ -463,7 +465,7 @@ export class LawyerList extends Component<Props> {
 
                 <div
                   onScroll={this.handleScroll}
-                  style={{ height: "800px", overflow: "auto" }}
+                  style={{ height: "800px", overflow: "auto", width:"fit-content" }}
                 >
                   <CheckboxList
                     data={itemsToDisplay}
@@ -497,7 +499,7 @@ export class LawyerList extends Component<Props> {
               </Grid>
             )}
             <Grid item xs={3} alignItems="flex-end">
-              <table cellPadding="15" style={{ background: "white", borderRadius: "25px", margin: "3rem 1rem", width: "90%" }}>
+              <table  cellPadding="15" className="fix-width" style={{ background: "white", borderRadius: "25px", margin: "3rem 1rem", width: "90%" }}>
                 <tr>
                   <td>
                     <Typography component="p">
@@ -605,7 +607,7 @@ export class LawyerList extends Component<Props> {
                 }}
               /> */}
             </Grid>
-
+              </div>
             {/* <Grid item xs={3}>
               <FixedContainer
                 data={{
