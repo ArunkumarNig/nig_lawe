@@ -384,6 +384,15 @@ div.react-pdf__Document:has(div .MuiCardContent-root.card-content){
  display: block !important; 
 }
 }
+.casemanagement-card-container{
+.MuiGrid-item.MuiGrid-grid-xs-3{
+  .MuiTypography-h6{
+    margin-top: 0!important;
+
+  }
+
+}
+}
 // div .MuiPaper-root .sc-aXZVg:has(div.react-pdf__Document){
 //   display: none; 
 // }

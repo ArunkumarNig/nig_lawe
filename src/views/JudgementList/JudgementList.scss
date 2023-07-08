@@ -57,6 +57,32 @@
    .MuiButton-label{
         text-align: left;
   }
+  .css-11lq3yg-MuiGrid-root{
+    display: flex!important;
+    width:100%;
+    flex-direction: column-reverse!important;
+
+   
+ }
+ .css-11lq3yg-MuiGrid-root{
+   .card.MuiPaper-elevation1{
+       width:580%!important;
+       margin-left: 12px!important;
+       // margin:6px 3px 3px 4px;
+       height: 256px;
+
+   }
+ }
+ .react-pdf__message--no-data{
+   height: 34px!important;
+   text-align-last: end!important;
+   padding-top: 2px!important;
+ }
+ .css-1qpzhgb-MuiGrid-root{
+   overflow-y: scroll!important;
+   max-height: 1000px!important;
+   max-width: 98%!important;
+ }
 
   }
   @media only screen and (min-width: 320px) and (max-width: 600px) {
@@ -68,7 +94,36 @@
    .MuiButton-label{
         text-align: left;
   }
+  .css-11lq3yg-MuiGrid-root{
+     display: flex!important;
+     width:100%;
+     flex-direction: column-reverse!important;
+
+    
   }
+  .css-11lq3yg-MuiGrid-root{
+    .card.MuiPaper-elevation1{
+        width:556%!important;
+        margin-left: 12px!important;
+        // margin:6px 3px 3px 4px;
+        height: 256px;
+
+    }
+  }
+  .react-pdf__message--no-data{
+    height: 34px!important;
+    text-align-last: end!important;
+    padding-top: 2px!important;
+  }
+  .css-1qpzhgb-MuiGrid-root{
+    overflow-y: scroll!important;
+    max-height: 1000px!important;
+    max-width: 98%!important;
+  }
+  }
+
+
+ 
 
 //   @media only screen and (min-width: 960px) and (max-width: 2560px) {
 //     .MuiBox-root.MuiBox-root-44, .MuiBox-root.MuiBox-root-66{

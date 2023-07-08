@@ -226,7 +226,7 @@ export function MediaCard(props) {
             <Typography gutterBottom variant="h5" component="h5" className="title-text">
               {props.data.title}
             </Typography>
-            <Typography gutterBottom variant="h6" component="h5" className="location-text">
+            <Typography gutterBottom variant="h5" component="h5" className="location-text">
               {submittedOn}
             </Typography>
             <div className="ack-container">
