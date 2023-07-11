@@ -306,11 +306,11 @@ export const DocumentContainer = (props: Props) => {
           </Box>
         </Box>
       )}
-      <Grid container alignItems="center" justify="flex-start">
+      <Grid container alignItems="center" justify="flex-start" className="cssfile">
  {props.parentId != 0 &&
           props.caseDocuments?.files?.map((f) => {
             return (
-              <Grid item xs={3} className={classes.fileItem} key={f.id}>
+              <Grid item xl = {3}  className={classes.fileItem} key={f.id}>
                 <div className={classes.fileBox}>
                   {/* <div className={classes.imgBox} onClick={() => viewCaseFile(f)}>
                     <ImageIcon className={classes.imgIcon} style={{ cursor: "pointer" }} />

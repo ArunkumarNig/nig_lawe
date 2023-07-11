@@ -334,10 +334,15 @@
         //     margin:30px!important;
         // }
 
-      }
-    
+        .searchFieldContainer{
+            .MuiChip-clickable.MuiChip-deletable{
+                width: 150px;
+            }
+        }
+    }
+      
+
     @media only screen and (min-width:968px){
-   
     .searchFieldContainer{
         display: flex;
         margin: 20px 0;
