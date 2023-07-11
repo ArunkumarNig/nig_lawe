@@ -98,18 +98,25 @@
      display: flex!important;
      width:100%;
      flex-direction: column-reverse!important;
-
-    
-  }
-  .css-11lq3yg-MuiGrid-root{
-    .card.MuiPaper-elevation1{
+     .card.MuiPaper-elevation1{
         width:556%!important;
         margin-left: 12px!important;
         // margin:6px 3px 3px 4px;
         height: 256px;
 
     }
+
+    
   }
+//   .css-11lq3yg-MuiGrid-root{
+//     .card.MuiPaper-elevation1{
+//         width:556%!important;
+//         margin-left: 12px!important;
+//         // margin:6px 3px 3px 4px;
+//         height: 256px;
+
+//     }
+//   }
   .react-pdf__message--no-data{
     height: 34px!important;
     text-align-last: end!important;
