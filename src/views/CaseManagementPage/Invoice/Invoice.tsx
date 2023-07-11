@@ -125,7 +125,8 @@ export const Invoice = (props) => {
               <React.Fragment>
                 <Grid item xs={7} className={classes.grid}>
                   <div className={classes.card}>
-                    <div className={classes.contentContainer}>
+                    {/* <div className={classes.contentContainer}>
+                 
                       <Typography gutterBottom variant="h6" component="h1" className={classes.subText}>
                         Invoice Number: <b>{item.invoiceNo}</b>
                       </Typography>
@@ -138,8 +139,21 @@ export const Invoice = (props) => {
                       <Typography gutterBottom variant="h6" component="h1" className={classes.subText}>
                         Invoice Total: <b>{item.amount}</b>
                       </Typography>
-                    </div>
+                    </div> */}
                     <div className={classes.contentContainer}>
+                    <Typography gutterBottom variant="h6" component="h1" className={classes.subText}>
+                        Invoice Number: <b>{item.invoiceNo}</b>
+                      </Typography>
+                      <Typography gutterBottom variant="h6" component="h1" className={classes.subText}>
+                        Phase Name: <b>{item.phaseName}</b>
+                      </Typography>
+                      <Typography gutterBottom variant="h6" component="h1" className={classes.subText}>
+                        Ordered Date: <b>{moment(item.created).format('MMMM d, YYYY')}</b>
+                      </Typography>
+                      <Typography gutterBottom variant="h6" component="h1" className={classes.subText}>
+                        Invoice Total: <b>{item.amount}</b>
+                      </Typography>
+                    {/* <div className="contentinvoice"> */}
                       <Typography gutterBottom variant="h6" component="h1" className={classes.subText}>
                         <b>Billing Address</b>
                       </Typography>
@@ -155,6 +169,7 @@ export const Invoice = (props) => {
                {!isClient && ( 
                 <Grid item xs={2}>
                   <div className={classes.contentContainer}>
+                  {/* <div className="contentinvoice"> */}
                     <Button
                       aria-controls={open ? "menu-list-grow" : undefined}
                       aria-haspopup="true"

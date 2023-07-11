@@ -302,6 +302,19 @@
             }
         }
     }
+    .lawer_list{
+        // .MuiList-root{
+        //     .MuiListItem-gutters{
+        //         width: 230px;
+        //     }
+        // }
+        width: 330px;
+    }
+    .MuiDialogActions-spacing{
+        display: block !important;
+
+    }
+   
     }
     @media only screen  and (min-width: 768px) and (max-width: 968px) {
         .sortby{
@@ -310,14 +323,24 @@
             display:flex !important;
             flex-direction: column-reverse;
         }
-
-     
+        .lawer_list{
+            height: 800px;
+             overflow: auto;
+             width:fit-content
+        }
+        .splitColumn{
+            flex: 0 0 33% !important;
+            max-width: 33.33333333%;
+          }
     }
     @media only screen  and (min-width: 968px) and (max-width: 1024px) {
         .MuiGrid-root.MuiGrid-item.MuiGrid-align-items-xs-flex-end.MuiGrid-grid-xs-3{
             max-width: 64px!important;
             margin:1rem -2rem!important; 
         }
-
+        .splitColumn{
+            flex: 33.33333333%;
+            max-width: 33.33333333%;
+          }
      
     }

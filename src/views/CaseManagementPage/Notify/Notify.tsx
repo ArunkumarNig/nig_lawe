@@ -318,7 +318,7 @@ export function Notify (props) {
     return (
         <div>
             <div className="container-sm-12" style={{}}>
-                <div className="row mx-5 my-5">
+                <div className="row mx-4 my-5">
                     <div className="col d-flex justify-content-start">
                         <Typography style={{ fontWeight: "bold", fontSize: "25px" }}>Notify</Typography>
                         <Typography style={{ fontWeight: "light", paddingTop: "8px"}}>
@@ -330,12 +330,12 @@ export function Notify (props) {
                             
                         </Typography>
                     </div>
-                    <div className="col d-flex justify-content-end " >
-
-                        <Button variant="contained" className="addcontacts mx-5" style={{ backgroundColor: "#292734", color: "#FFC602" }} onClick={handleClickOpen}>
+                    <div className="justify-content-end send-notification" >
+                    {/* <div className="send-notification" > */}
+                        <Button variant="contained" className="addcontacts mx-2" style={{ backgroundColor: "#292734", color: "#FFC602" }} onClick={handleClickOpen}>
                             Add Contacts
                         </Button>
-                        <Button variant="contained" className="addcontacts" style={{ backgroundColor: "#292734", color: "#FFC602" }} onClick={handleOpenNotification}>
+                        <Button variant="contained" className="addcontacts mx-2" style={{ backgroundColor: "#292734", color: "#FFC602" }} onClick={handleOpenNotification}>
                             Send Notifications
                         </Button>
 
@@ -523,7 +523,7 @@ export function Notify (props) {
                             </div> 
                         </div>
                         <div><InputLabel className="mt-3">Message</InputLabel>
-                            <TextareaAutosize cols={65} rows={5} id="message" /></div>
+                            <TextareaAutosize cols={65} rows={5} id="message"  className="textareastyle"/></div>
 
                     </div>}
                     okText="Send"
@@ -543,13 +543,13 @@ export function Notify (props) {
                 <div className="row" style={{ width: "100%" }}>
                     {props.data.caseManagement.notiBycaseId?.map((item) => {
                         return (
-                            <div className="col-4">
+                            <div className="col-sm-4 col-md-4 col-lg-4">
                                 <div>
-                                    <Card className="my-5 mx-3" raised={true} style={{ padding: "15px", width: "auto" }}>
+                                    <Card className="my-3 mx-3" raised={true} style={{ padding: "15px" }}>
                                         <CardContent>
                                         <Typography>To : <strong>{item?.toName}</strong></Typography>
                                         <Typography className = {classes.para}>Message : {item?.notification}</Typography>
-                                        <Typography className = {classes.para}>To Email : {item?.toEmail}</Typography>                                        
+                                        <Typography className = {classes.para} style={{wordWrap:"break-word" }}>To Email : {item?.toEmail}</Typography>                                        
                                         <Typography className = {classes.para}>
                                             Read by user : <strong className =
                                             {item?.readByUser == "No" ? classes.blueLine
@@ -614,8 +614,9 @@ export function Notify (props) {
 
                     {namespace?.casecontactdetails?.map((item) => {
                         return (
-                            <div className="col-4">
-                                <div>
+                            <div>
+                            <div >
+                                {/* <div> */}
                                     <Card className="my-5 mx-3" raised={true} style={{ padding: "15px", width: "auto" }}>
                                         <CardContent>
                                             <Typography style={{ fontWeight: "bold", justifyContent: "center", fontSize: "20px" }}>{item.contactName}</Typography>

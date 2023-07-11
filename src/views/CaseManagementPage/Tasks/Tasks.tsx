@@ -238,7 +238,7 @@ export function Tasks(props) {
     return (
         <div>
             <div className="container-sm-12" style={{}}>
-                <div className="row mx-5 my-5">
+                <div className="row mx-1 my-5 col-sm-12 col-lg-12 col-md-12">
                     <div className="col d-flex justify-content-start">
                         <Typography style={{ fontWeight: "bold", fontSize: "25px" }}>TO - DO</Typography>
                     </div>
@@ -288,7 +288,7 @@ export function Tasks(props) {
                                 </Select>
                             </FormControl></div>
                         <div> <InputLabel className="mt-4">Description</InputLabel>
-                            <TextareaAutosize cols={65} rows={5} id="description" /></div>
+                            <TextareaAutosize cols={65} rows={5} id="description" className="textareastyle"/></div>
                         <div>
                             <InputLabel className="mt-4">Deadline</InputLabel>
                             <MuiPickersUtilsProvider utils={DateFnsUtils}>
@@ -344,14 +344,14 @@ export function Tasks(props) {
                         let taskMonth = date.getUTCMonth() + 1
                         let taskYear = date.getUTCFullYear()
                         return (
-                            <div className="col-4">
+                            <div className="col-lg-10 col-sm-4 col-md-8">
                                 <div>
                                     <Card className="my-5 mx-3" raised={true} style={{ padding: "15px", width: "auto" }}>
                                         <CardContent>
                                             <Typography style={{ fontWeight: "bold", justifyContent: "center", fontSize: "20px" }}> Task Name : {item.taskName}</Typography>
                                             <Typography>Phase Name : {item.phaseName}</Typography>
-                                            <Typography>Description :</Typography>
-                                            <textarea cols={40} rows={5} disabled={true}>{item.description}</textarea>
+                                            <Typography>Description :</Typography>                                           
+                                            <textarea className="textareastyle" cols={40} rows={5} disabled={true}>{item.description}</textarea>
                                             <Typography>Deadline : {taskdate}/{taskMonth}/{taskYear}</Typography>
                                             <Typography style={{ fontWeight: "bold", justifyContent: "center", fontSize: "15px" }}> STATUS : {item.taskStatus}</Typography>
                                             <div className="d-flex justify-content-end">

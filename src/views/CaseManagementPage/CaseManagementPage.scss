@@ -356,6 +356,9 @@
   width: 100%,
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .MuiDialogActions-spacing > :not(:first-child){
+    margin-left: 0px !important;
+  }
   .stageCheck {
     display: block !important;
   }
@@ -383,6 +386,13 @@
 div.react-pdf__Document:has(div .MuiCardContent-root.card-content){
  display: block !important; 
 }
+.linked_case{
+width: 22rem;
+// padding: 20px;
+}
+.textareastyle{
+  width: 200px;
+}
 }
 .casemanagement-card-container{
 .MuiGrid-item.MuiGrid-grid-xs-3{
@@ -397,6 +407,9 @@ div.react-pdf__Document:has(div .MuiCardContent-root.card-content){
 //   display: none; 
 // }
 @media only screen and (min-width: 620px) and (max-width: 768px) {
+  .textareastyle{
+    width: 300px;
+  }
   .stageCheck {
     display: flex !important;
     align-items: center;
@@ -451,9 +464,16 @@ justify-content: unset;
   text-transform: unset;
   text-align: left;
 }
+.linked_case{
+  width: 35rem;
+  // padding: 20px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
+  .textareastyle{
+    width: 500px;
+  }
   .stageCheck {
     display: flex !important;
   }
@@ -475,5 +495,9 @@ justify-content: unset;
 justify-content: unset;
   margin: "0.5rem 0";
 }
+.linked_case{
+  width: 40rem;
+  // padding: 20px;
+  }
 }
 

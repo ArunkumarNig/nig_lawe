@@ -220,7 +220,7 @@ export function Appointments (props) {
                     <div className="col d-flex justify-content-start">
                         <Typography style={{ fontWeight: "bold", fontSize: "25px" }}>Appointments</Typography>
                     </div>
-                    <div className="col d-flex justify-content-end"  >
+                    <div className="col justify-content-end"  >
                         <Button variant="contained" className="addnotes" style={{ backgroundColor: "#292734" }} onClick={handleClickOpen}>
                             Fix Appointments
                         </Button>
@@ -352,7 +352,7 @@ export function Appointments (props) {
                         <CardContent>
                             <Typography style={{ fontWeight: "bold", justifyContent: "center", fontSize: "20px" }}>{props.data.appointments?.lawyerdetails?.userName}</Typography>
                             <Typography> {props.data.appointments?.lawyerdetails?.mobileno}</Typography>
-                            <Typography>{props.data.appointments?.lawyerdetails?.email}</Typography>
+                            <Typography style={{wordWrap: "break-word"}}>{props.data.appointments?.lawyerdetails?.email}</Typography>
 
                         </CardContent>
                     </Card>
@@ -418,9 +418,10 @@ export function Appointments (props) {
                 const date = new Date(item?.appointmentDate);
                 const tDate = moment(date).format("DD/MM/YYYY HH:mm");
                 return (
-                    <div className="col-6">
+                    // <div className="col-6">
+                    <div>
                         <div>
-                            <Card className="my-5 mx-5" raised={true} style={{ padding: "15px", width: "auto" }}>
+                            <Card className="my-5 mx-4" raised={true} style={{ padding: "15px", width: "auto" }}>
                                 <CardContent>
                                     <Typography>From: <strong>{item?.fromName}</strong></Typography>
                                     <Typography className = {classes.para}>Message: {item?.message}</Typography>
@@ -479,9 +480,10 @@ export function Appointments (props) {
                 const date = new Date(item?.appointmentDate);
                 const tDate = moment(date).format("DD/MM/YYYY HH:mm");
                 return (
-                    <div className="col-6">
+                    // <div className="col-6">
+                    <div>
                         <div>
-                            <Card className="my-5 mx-5" raised={true} style={{ padding: "15px", width: "auto" }}>
+                            <Card className="my-5 mx-4" raised={true} style={{ padding: "15px", width: "auto" }}>
                                 <CardContent>
                                     <Typography>To: <strong>{item?.toName}</strong></Typography>
                                     <Typography className = {classes.para}>ToEmail: {item?.toEmail}</Typography>

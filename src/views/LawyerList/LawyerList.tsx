@@ -146,7 +146,7 @@ export function MediaCard(props) {
       <CardActions className="action-container">
         <Grid container alignItems="center" justify="space-between">
           <Grid item>
-            <Typography variant="h6">
+            <Typography variant="h6" >
               LAWE Engagements: {props.data.engagements}
             </Typography>
             <Typography variant="h6">
@@ -465,7 +465,8 @@ export class LawyerList extends Component<Props> {
 
                 <div
                   onScroll={this.handleScroll}
-                  style={{ height: "800px", overflow: "auto", width:"fit-content" }}
+                  className="lawer_list"
+                  // style={{ height: "800px", overflow: "auto", width:"fit-content" }}
                 >
                   <CheckboxList
                     data={itemsToDisplay}

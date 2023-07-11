@@ -76,6 +76,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1rem",
     textTransform: "unset",
     fontWeight: 300,
+    paddingTop:20
   },
 }));
 interface Props {
@@ -256,7 +257,8 @@ export const ConnectedMatter = (props: Props) => {
             props.caseManagement?.connectedMatters?.subMatter?.length > 0 &&
             props.caseManagement.connectedMatters.subMatter.map((matter) => {
               return (
-                <Grid item xs={3}>
+                // <Grid item xs={3}>
+                <Grid className="linked_case">
                   <div className={classes.card}>
                     <Typography
                       gutterBottom
@@ -321,7 +323,8 @@ export const ConnectedMatter = (props: Props) => {
             props.caseManagement?.connectedMatters?.linkedCase?.length > 0 &&
             props.caseManagement.connectedMatters.linkedCase.map((link) => {
               return (
-                <Grid item xs={3}>
+                // <Grid item xs={3}>
+              <Grid className="linked_case">
                   <div className={classes.card}>
                     <Typography
                       gutterBottom
