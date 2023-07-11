@@ -123,7 +123,7 @@ export function MultiPDFViewer(props: any) {
     <div>
       <Header links={<HeaderLinks  {...props} />} fixed color="primary" />
       <Grid container className="pdfcss">
-        <Grid item xs={9} style={{overflowY:'scroll',maxHeight:'1000px'}}>
+        <Grid item xs={9} style={{overflowY:'scroll',maxHeight:'1000px', marginTop: '10px', maxWidth:'95%'}} className='col-sm-12 col-md-12 col-lg-12'>
           <PDFContainer>
             <Document
               file={previewURL}
