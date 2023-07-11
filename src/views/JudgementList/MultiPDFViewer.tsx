@@ -122,7 +122,7 @@ export function MultiPDFViewer(props: any) {
   return (
     <div>
       <Header links={<HeaderLinks  {...props} />} fixed color="primary" />
-      <Grid container>
+      <Grid container className="pdfcss">
         <Grid item xs={9} style={{overflowY:'scroll',maxHeight:'1000px'}}>
           <PDFContainer>
             <Document
@@ -151,7 +151,7 @@ export function MultiPDFViewer(props: any) {
             </Document>
           </PDFContainer>
         </Grid>
-        <Grid item xs={2} style={{paddingTop:'80px'}}>
+        <Grid item xs={2} style={{paddingTop:'80px'}} className="cssjudge ml-3">
           <Card className="card">
             <CardContent className="card-content">
               <Typography gutterBottom variant="h6" component="h4">
