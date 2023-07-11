@@ -43,7 +43,7 @@ import face from "../../assets/img/faces/avatar.png";
 import * as CommonActions from "../../reduxAction/common/commonActions";
 import * as CaseManagementActions from "../../reduxAction/caseManagement/caseManagementActions";
 import "./LawyerList.scss";
-// import { FixedContainer } from "./ModifySearch";
+import { FixedContainer } from "./ModifySearch";
 
 const styles: any = {
   card: {},
@@ -598,7 +598,7 @@ export class LawyerList extends Component<Props> {
                   </td>
                 </tr>
               </table>
-              {/* <FixedContainer
+              <FixedContainer
                 data={{
                   itemsToDisplay: itemsToDisplay,
                   lawCategory: this.props.lawCategory,
@@ -606,7 +606,7 @@ export class LawyerList extends Component<Props> {
                   findLawyerActions: this.props.findLawyerActions,
                   subCategory: this.props.subCategory,
                 }}
-              /> */}
+              />
             </Grid>
               </div>
             {/* <Grid item xs={3}>

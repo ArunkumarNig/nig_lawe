@@ -302,6 +302,26 @@
             }
         }
     }
+
+    .lawyer-container{
+        .sortby{
+            .MuiGrid-root{
+               
+                    
+                        width: 286px;
+                   
+                
+                
+                // display: none;
+                
+            }
+        }
+    }
+
+
+
+
+
     .lawer_list{
         // .MuiList-root{
         //     .MuiListItem-gutters{
@@ -332,6 +352,34 @@
             flex: 0 0 33% !important;
             max-width: 33.33333333%;
           }
+          .lawyer-container{
+            .sortby{
+                .MuiGrid-root.MuiGrid-item:last-of-type{
+                    .text-field{
+                        .select-input{
+                            width: 43rem;
+                        }
+                    
+                    }
+                    // display: none;
+                    
+                }
+            }
+        }
+        .lawyer-container{
+            .sortby{
+                .MuiGrid-root{
+                   
+                        
+                            width: 45rem;
+                       
+                    
+                    
+                   
+                    
+                }
+            }
+        }
     }
     @media only screen  and (min-width: 968px) and (max-width: 1024px) {
         .MuiGrid-root.MuiGrid-item.MuiGrid-align-items-xs-flex-end.MuiGrid-grid-xs-3{
