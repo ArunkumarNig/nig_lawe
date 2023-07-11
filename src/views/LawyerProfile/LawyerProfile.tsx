@@ -78,6 +78,7 @@ const styles: any = {
   subTitle: {
     textTransform: "unset",
     padding: "5px 30px",
+    marginTop:"12px"
   },
   subCardTitle: {
     padding: "5px 10px",
@@ -174,7 +175,7 @@ export function LawyerProfile(props: Props) {
             <Typography className={classes.subCardTitle} variant="h6" gutterBottom align="center">
               Specialization
             </Typography>
-            <Typography className={classes.subTitle} variant="subtitle1" gutterBottom>
+            <Typography className={classes.subTitle} variant="subtitle1" gutterBottom >
               {skils.join()}
             </Typography>
           </Paper>
