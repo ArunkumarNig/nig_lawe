@@ -464,7 +464,7 @@ export function Notify (props) {
                         <CardContent>
                             <Typography style={{ fontWeight: "bold", justifyContent: "center", fontSize: "20px" }}>{props.data.notify?.lawyerdetails?.userName}</Typography>
                             <Typography> {props.data.notify?.lawyerdetails?.mobileno}</Typography>
-                            <Typography>{props.data.notify?.lawyerdetails?.email}</Typography>
+                            <Typography style={{wordWrap : 'break-word'}}>{props.data.notify?.lawyerdetails?.email}</Typography>
 
                         </CardContent>
                     </Card>
@@ -479,7 +479,7 @@ export function Notify (props) {
                         <CardContent>
                             <Typography style={{ fontWeight: "bold", justifyContent: "center", fontSize: "20px" }}>{props.data.notify?.lawyerdetails?.userName}</Typography>
                             <Typography> {props.data.notify?.lawyerdetails?.mobileno}</Typography>
-                            <Typography>{props.data.notify?.lawyerdetails?.email}</Typography>
+                            <Typography style={{wordWrap : 'break-word'}}>{props.data.notify?.lawyerdetails?.email}</Typography>
 
                         </CardContent>
                     </Card>
@@ -494,7 +494,7 @@ export function Notify (props) {
                         <CardContent>
                             <Typography style={{ fontWeight: "bold", justifyContent: "center", fontSize: "20px" }}>{props.data.notify?.lawyerdetails?.userName}</Typography>
                             <Typography> {props.data.notify?.lawyerdetails?.mobileno}</Typography>
-                            <Typography>{props.data.notify?.lawyerdetails?.email}</Typography>
+                            <Typography style={{wordWrap : 'break-word'}}>{props.data.notify?.lawyerdetails?.email}</Typography>
 
                         </CardContent>
                     </Card>

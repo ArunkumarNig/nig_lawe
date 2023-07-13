@@ -310,7 +310,7 @@ export const DocumentContainer = (props: Props) => {
  {props.parentId != 0 &&
           props.caseDocuments?.files?.map((f) => {
             return (
-              <Grid item xl = {3}  className={classes.fileItem} key={f.id}>
+              <Grid item xl = {3}className={classes.fileItem} key={f.id}>
                 <div className={classes.fileBox}>
                   {/* <div className={classes.imgBox} onClick={() => viewCaseFile(f)}>
                     <ImageIcon className={classes.imgIcon} style={{ cursor: "pointer" }} />
@@ -318,7 +318,7 @@ export const DocumentContainer = (props: Props) => {
                   <img className={classes.img} />
                   <Typography
                     gutterBottom
-                    variant="h5"
+                    variant="h6"
                     component="h2"
                     className={classes.text}
                     onClick={() => viewCaseFile(f)}
@@ -754,7 +754,7 @@ export const DocumentUpload = (props: any) => {
         handleOk={handleSuccessStageClose}
         handleCancel={handleCancelStageClose}
         formContent={
-          <Paper className={classes.paper}>
+          <Paper >
             {mainFolders &&
               mainFolders.filter( (roleFilter) => {
 
@@ -791,7 +791,7 @@ export const DocumentUpload = (props: any) => {
                         <List component="div" disablePadding>
                           <ListItem
                             button
-                            className={classes.nested}
+                            // className={classes.nested}
                             onClick={(eve) => {
                               handleFolderClick(
                                 eve,

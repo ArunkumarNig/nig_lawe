@@ -812,6 +812,7 @@ export function CaseManagement(props : any) {
                       label="Product*"
                       error={!isValidCase}
                       placeholder="Product"
+                      className="col-sm-12 col-md-12 col-xl-12 col-lg-12 "
                     >
                       <option aria-label="None" value="" />
                       {

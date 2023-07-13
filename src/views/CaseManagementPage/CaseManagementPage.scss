@@ -26,6 +26,13 @@
   }
 
 }
+.casemanagement-card-container{
+.tab-container{
+  overflow-y: scroll !important;
+  overflow-x: scroll !important;
+}
+}
+
 .casemanagement-container-second {
   .casemanagement-card-container {
     // margin: 20px 15px;
@@ -418,6 +425,12 @@ width: 22rem;
 // div .MuiPaper-root .sc-aXZVg:has(div.react-pdf__Document){
 //   display: none; 
 // }
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .textareastyle{
+    width: 200px!important;
+  }
+}
 @media only screen and (min-width: 620px) and (max-width: 768px) {
   .textareastyle{
     width: 300px;
