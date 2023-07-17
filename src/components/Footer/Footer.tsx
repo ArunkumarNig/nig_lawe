@@ -70,7 +70,9 @@ export default function Footer() {
                     <PhoneAndroidIcon className="footer-icon" />
                   </ListItemIcon>
                   <ListItemText  className="list-item-text"
-                    primary="+91 93457 62392"
+                    // primary="+91 93457 62392"
+                    primary="+91 90253 30475"
+                    
                   />
                 </ListItem>
               </List>

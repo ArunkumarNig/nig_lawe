@@ -247,6 +247,57 @@ export function CaseManagement(props) {
     setRegDate(new Date());
     setCNRNo("");
   };
+  const handleTablick = () => {
+// const tabs = document.querySelectorAll('[data-tab-value]')
+// const tabs = document.querySelectorAll('.case_tabs');
+
+        // const tabInfos = document.querySelectorAll('[data-tab-info]')
+        const tabInfos = document.querySelectorAll('.case_tabs');
+
+        // setValue("Timeline");
+        // tabInfos.console.log(first)
+        // tabs.forEach(tab => {
+          tabInfos.forEach(tab => {
+            tab.classList.remove('casetab_active')
+        })
+            document.addEventListener('click', (e) => {
+              var targetElement = e.target as Element;
+              var checkText = targetElement.textContent;
+              if(checkText == 'Case Status' || checkText == 'Timeline' || checkText == 'Connected Matters' || checkText == 'Documents' || 
+              checkText == 'Notes' || checkText == 'Notify' || checkText == 'Related Judgements' || 
+              checkText == 'Tasks' || checkText == 'Appointments' || checkText == 'Invoice' || checkText == 'Find Judgements'){
+                targetElement.classList.add('casetab_active');
+                setValue(targetElement.textContent);
+              } 
+        })
+  };
+
+  const buttonLeftClick = () => {
+    var left = document.getElementById('container');
+    left.scrollLeft -= 550;
+    if(left.scrollLeft < 1){
+      document.getElementById('slideLeft').style.display = 'none';
+    }
+  };
+  const buttonLeftScroll = () => {
+    // debugger
+    var left = document.getElementById('container');
+    if(left.scrollLeft > 1){
+      document.getElementById('slideLeft').style.display = 'block';
+    }
+    else{
+      document.getElementById('slideLeft').style.display = 'none';
+    }
+  };
+  
+  const buttonRightClick = () => {
+    var left = document.getElementById('container');
+    left.scrollLeft += 550;
+    if(left.scrollLeft > 0){
+      document.getElementById('slideLeft').style.display = 'block';
+    }
+    };
+
   const handleEdit = () => {
     props.commonActions.getCaseType();
     props.commonActions.getCourts();
@@ -450,7 +501,27 @@ export function CaseManagement(props) {
               )}
             </Paper>
           </Paper>
-
+          
+        
+          <Paper className="tab-container" >
+        <div id="slideLeft" onClick={buttonLeftClick}><span className="arrow next">&#8249;</span></div>
+        <div className="tabs hide-scroll" id="container" onClick={handleTablick}  onScroll={buttonLeftScroll}>
+        <span className="case_tabs" data-tab-value="#tab_1" >Case Status</span>
+        <span  className="case_tabs" data-tab-value="#tab_2">Timeline</span>
+        <span className="case_tabs" data-tab-value="#tab_3">Connected Matters</span>
+        <span className="case_tabs" data-tab-value="#tab_4">Documents</span>
+        {(!isClient && status!="reassign_pending") && <span  className="case_tabs" data-tab-value="#tab_5" >Notes</span>}
+         {((!isClient && status!="reassign_pending") || isClient) && <span  className="case_tabs" data-tab-value="#tab_6"  >Notify</span>}
+        <span className="case_tabs" data-tab-value="#tab_7">Related Judgements</span>
+        {((!isClient && status!="reassign_pending") || isClient) && <span  className="case_tabs" data-tab-value="#tab_8"  >Tasks</span>}
+        {((!isClient && status!="reassign_pending") || isClient) && <span  className="case_tabs" data-tab-value="#tab_9"  >Appointments</span>}
+        {((!isClient && status!="reassign_pending") || isClient) && <span  className="case_tabs" data-tab-value="#tab_10"  >Invoice</span>}
+        {!isClient && <span  className="case_tabs" data-tab-value="#tab_11"  >Find Judgements</span>}
+    </div>
+    <div id="slideRight" onClick={buttonRightClick}><span className="arrow next">&#8250;</span></div>
+          </Paper>
+        
+{/* 
           <Paper className="tab-container">
             <Tabs value={value} onChange={handleTabChange}  variant="scrollable" scrollButtons="on" >
               <Tab label="Case Status" className="tab-child" value="Case Status" />
@@ -465,7 +536,7 @@ export function CaseManagement(props) {
               {((!isClient && status!="reassign_pending") || isClient) && <Tab label="Invoice" className="tab-child" value="Invoice" />}
               {!isClient && (<Tab label="Find Judgements" className="tab-child" value="Find Judgements"/>)}
             </Tabs>
-          </Paper>
+          </Paper> */}
           {value === "Case Status" && (
             <CaseStatus
               caseManagement={props.caseManagement}
