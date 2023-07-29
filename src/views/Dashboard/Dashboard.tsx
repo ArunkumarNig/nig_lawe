@@ -1464,7 +1464,7 @@ export class Dashboard extends Component<Props> {
               {itemsToDisplay?.length > 0 &&
                 <div
                   className="dashboard-container"
-                  // style={{ height: "500px", overflow: "auto" }}
+                  style={{ height: "500px", overflow: "auto" }}
                 >
                   <Grid container>
                     <Grid item xs={12}>

@@ -614,10 +614,10 @@ export function Notify (props) {
 
                     {namespace?.casecontactdetails?.map((item) => {
                         return (
-                            <div>
+                            <div className="col-sm-10 col-md-12 col-lg-12">
                             <div >
                                 {/* <div> */}
-                                    <Card className="my-5 mx-3" raised={true} style={{ padding: "15px", width: "auto" }}>
+                                    <Card className="my-5 mx-3" raised={true} style={{ padding: "15px"}}>
                                         <CardContent>
                                             <Typography style={{ fontWeight: "bold", justifyContent: "center", fontSize: "20px" }}>{item.contactName}</Typography>
                                             <Typography>{item.contactMobileNo}</Typography>
