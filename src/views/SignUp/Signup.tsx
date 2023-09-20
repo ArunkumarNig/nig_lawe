@@ -19,9 +19,15 @@ import ResponsiveDialog from "../../components/ClouserDialog/ClouserDialog";
 
 import { Form } from 'react-formio';
 import lawyerForm from '../../assets/form/lawyer.json';
+import lawyerFormMobile from '../../assets/form/lawyer_mobile.json';
 import individualForm from '../../assets/form/individual.json';
+import individualFormMobile from '../../assets/form/individual_mobile.json';
+
 import clientFirmForm from '../../assets/form/clientfirm.json';
+import clientFirmFormMobile from '../../assets/form/clientfirm_mobile.json';
+
 import lawFirmForm from '../../assets/form/lawfirm.json';
+import lawFirmFormMobile from '../../assets/form/lawfirm_mobile.json';
 import companyLawyerForm from '../../assets/form/companylawyer.json';
 import './Signup.scss';
 
@@ -457,7 +463,7 @@ export const SignUpPage = (props: Props) => {
   const [individualData, setIndividualData] = React.useState({});
   const [companyLawerEditIndex, setCompanyLawerEditIndex] = React.useState(0);
   const [ isLoading, setIsLoading ] = React.useState(props?.isLoading === true? true: false);
-
+  const media_check = window.matchMedia("(max-width: 475px)");
 
   return (
     <div>
@@ -539,7 +545,16 @@ export const SignUpPage = (props: Props) => {
 
             </FormControl>
           </div>
-          <Form form={individualForm} submission={{ data: individualData }} onSubmit={getFromData} onChange={onchangepwd} options={options} />
+          {
+           media_check.matches ? 
+           <Form form={ individualFormMobile} submission={{ data: individualData }} onSubmit={getFromData} onChange={onchangepwd} options={options} />: 
+           <Form form={ individualForm} submission={{ data: individualData }} onSubmit={getFromData} onChange={onchangepwd} options={options} />
+          }
+         
+         {/* {
+         window.matchMedia("(max-width: 599px)") ? 
+         <Form form={ individualForm} submission={{ data: individualData }} onSubmit={getFromData} onChange={onchangepwd} options={options} />
+        : <Form form={ individualForm} submission={{ data: individualData }} onSubmit={getFromData} onChange={onchangepwd} options={options} />} */}
         </div>
 
       }
@@ -578,7 +593,13 @@ export const SignUpPage = (props: Props) => {
             </FormControl>
           </div>
           <>
-          <Form form={lawyerForm} submission={{ data: individualData }} onSubmit={getFromData} onChange={onchangepwd} options={options} />
+          {
+           media_check.matches ? 
+           <Form form={ lawyerFormMobile} submission={{ data: individualData }} onSubmit={getFromData} onChange={onchangepwd} options={options} />: 
+           <Form form={lawyerForm} submission={{ data: individualData }} onSubmit={getFromData} onChange={onchangepwd} options={options} />
+          }
+
+          {/* <Form form={lawyerForm} submission={{ data: individualData }} onSubmit={getFromData} onChange={onchangepwd} options={options} /> */}
           </>
         </div>
       }
@@ -618,7 +639,12 @@ export const SignUpPage = (props: Props) => {
               </RadioGroup>
             </FormControl>
           </div>
-          <Form className="dynamicContainer" form={clientFirmForm} submission={{ data: individualData }} onSubmit={getFromData} onChange={onchangepwd} options={options} />
+          {
+           media_check.matches ? 
+           <Form form={ clientFirmFormMobile} submission={{ data: individualData }} onSubmit={getFromData} onChange={onchangepwd} options={options} />: 
+           <Form className="dynamicContainer" form={clientFirmForm} submission={{ data: individualData }} onSubmit={getFromData} onChange={onchangepwd} options={options} />
+          }
+          
         </div>
       }
 
@@ -656,7 +682,12 @@ export const SignUpPage = (props: Props) => {
               </RadioGroup>
             </FormControl>
           </div>
-          <Form form={lawFirmForm} submission={{ data: companyData }} onSubmit={openAddLawyer} onChange={onchangepwd} options={options} />
+          {
+           media_check.matches ? 
+           <Form form={lawFirmFormMobile} submission={{ data: companyData }} onSubmit={openAddLawyer} onChange={onchangepwd} options={options} />: 
+           <Form form={lawFirmForm} submission={{ data: companyData }} onSubmit={openAddLawyer} onChange={onchangepwd} options={options} />
+          }
+          
         </div>
       }
 

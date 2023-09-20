@@ -134,6 +134,7 @@ export const _HeaderLinks = (props: any) => {
   const userName = (props.userName) ? props.userName : '';
   const judgmentAddNotes = (props.judgmentAddNotes === "true") ? props.judgmentAddNotes : null;
   const isSignUpPage = props.location.pathname === '/signup-page';
+  const [showDialog, setshowDialog] = React.useState(false);
   const [value, setValue] = React.useState(false);
   const [open, setOpen] = React.useState(false);
   const [notiCount, setNotiCount] = React.useState(0);
@@ -429,14 +430,34 @@ export const _HeaderLinks = (props: any) => {
     props.loginActions.updateSelectLawyerAction([]);
     props.history.push('/');
   }
+  const handleDelLogout = () => {
+    props.loginActions.logoutUserAction();
+    props.loginActions.updateSelectLawyerAction([]);
+    props.history.push('/login-page');
+  }
   const handleAddNotes = () => {
     setOpenAddNote(true);
+  }
+  const showDeleteDialog = () => {
+    setshowDialog(true);
   }
   const handleSettings = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   }
   const handleSettingsChangePassword = () => {
     props.history.push('/change-password');
+  }
+  const handleDeleteAccount = () => {
+
+    var result = window.confirm("Are you sure you want to delete your account from LAWE");
+    if (result) {
+      handleLogout();
+      // User clicked "OK"
+  } else {
+      // User clicked "Cancel"
+      console.log("User clicked Cancel");
+  }
+    // props.history.push('/change-password');
   }
   const handleSettingsProfile = () => {
     props.history.push('/profile');
@@ -807,6 +828,18 @@ else
               </ListItemIcon>
               <ListItemText>Change Password</ListItemText>
             </MenuItem>
+           { 
+           props.userInfo.email
+           == 'satchyajidt@gmail.com' && <MenuItem onClickCapture={()=>{
+                  setshowDialog(true)
+                  setOpen(true)
+           }}
+            >
+              <ListItemIcon>
+                <LockIcon fontSize="small" />
+              </ListItemIcon>
+              <ListItemText>Delete Account</ListItemText>
+            </MenuItem>}
             {/* <MenuItem onClick={handleLogout}>
               <ListItemIcon>
                 <LogoutIcon fontSize="small" />
@@ -815,6 +848,29 @@ else
             </MenuItem> */}
           </Menu>
         </div>
+      }
+      {
+        showDialog && <Dialog  open={open} onClose={handleClose} >
+          <div style={{padding:"20px"}}><span style={{marginBottom : "20px"}}>Are you sure you want to delete your account from LAWE</span>
+         <div style={{flexDirection: 'row', justifyContent:'space-between', marginTop:"10px"}}>
+         <Button  onClick={()=>{
+          setOpen(false);
+          setshowDialog(false);
+         }} style={{ backgroundColor: "#292734", color: "#FFC602", height: "50px", width: "180px" , marginRight:'2px',  marginBottom:'4px',}}>
+          Back
+          </Button>
+          <Button onClick={()=>{
+          props.snackbarsActions.showSuccessSnackbarAction("Deleted Successfully");
+          setOpen(false);
+          setshowDialog(false);
+          handleDelLogout();
+
+          }} style={{ backgroundColor: "#292734", color: "#FFC602", height: "50px", width: "180px" ,marginBottom:'4px'}}>
+          Proceed</Button>
+         </div>
+       
+</div>
+        </Dialog>
       }
       {value &&
 
@@ -856,7 +912,6 @@ else
                       <div>
                         {
                           item?.readByUser === "Yes" &&
-
                           <div>
                             <div className="container-sm-12" style={{ width: "100%", backgroundColor: "#d5deed" }}>
                               <div className="row d-flex justify-content-start">
@@ -971,7 +1026,6 @@ else
                                     </React.Fragment>}
                                 />
                               </ListItem>
-
                             </div>
 
                           </div>
@@ -979,7 +1033,6 @@ else
                         <div>
                           <Divider className="mb-2" />
                         </div>
-
                       </div>
                     );
                   })

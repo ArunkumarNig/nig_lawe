@@ -39,6 +39,27 @@
                 {
                   "input": true,
                   "tableView": true,
+                  "inputType": "text",
+                  "label": "Last Name",
+                  "key": "lName",
+                  "placeholder": "Last Name",
+                  "spellcheck": false,
+                  "autocomplete": "off",
+                  "validate": {
+                    "required": false,
+                    "pattern": "^[A-Za-z ]+$"
+                  },
+                  "errors": {
+                    "pattern": "Last Name should contain only alphabets",
+                    "required": "Please enter your Last Name"
+                  },
+                  "type": "textfield",
+                  "labelPosition": "left-left",
+                  "tabindex": 3
+                },
+                {
+                  "input": true,
+                  "tableView": true,
                   "label": "DOB",
                   "key": "dob",
                   "placeholder": "DOB",
@@ -76,75 +97,7 @@
                   },
                   "type": "datetime",
                   "labelPosition": "left-left",
-                  "tabindex": 3
-                },
-                {
-                  "input": true,
-                  "tableView": true,
-                  "inputType": "text",
-                  "label": "Email",
-                  "key": "email",
-                  "placeholder": "email@address.com",
-                  "spellcheck": false,
-                  "autocomplete": "off",
-                  "validate": {
-                    "required": true,
-                    "pattern": "^(([^<>()[\\]\\.,;:\\s@']+(\\.[^<>()[\\]\\.,;:\\s@']+)*)|('.+'))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$"
-                  },
-                  "errors": {
-                    "pattern": "Email Address is invalid",
-                    "required": "Please enter your Email Address"
-                  },
-                  "type": "textfield",
-                  "labelPosition": "left-left",
                   "tabindex": 5
-                },
-                {
-                  "input": true,
-                  "tableView": true,
-                  "inputType": "text",
-                  "label": "Aadhar Number",
-                  "key": "aadhar",
-                  "placeholder": "ex: 234567890123",
-                  "description": "First character should not be 0 or 1 and the next 11 digits should contain only numbers",
-                  "autocomplete": "off",
-                  "spellcheck": false,
-                  "validate": {
-                    "required": true,
-                    "pattern": "^[2-9]{1}[0-9]{3}[0-9]{4}[0-9]{4}$"
-                  },
-                  "errors": {
-                    "pattern": "Enter a valid Aadhaar Card Number",
-                    "required": "Please enter your Aadhaar Card Number"
-                  },
-                  "type": "textfield",
-                  "labelPosition": "left-left",
-                  "tabindex": 7
-                }
-              ]
-            },
-            {
-              "components": [
-                {
-                  "input": true,
-                  "tableView": true,
-                  "inputType": "text",
-                  "label": "Last Name",
-                  "key": "lName",
-                  "placeholder": "Last Name",
-                  "spellcheck": false,
-                  "autocomplete": "off",
-                  "validate": {
-                    "required": false,
-                    "pattern": "^[A-Za-z ]+$"
-                  },
-                  "errors": {
-                    "pattern": "Last Name should contain only alphabets",
-                    "required": "Please enter your Last Name"
-                  },
-                  "type": "textfield",
-                  "labelPosition": "left-left",
-                  "tabindex": 2
                 },
                 {
                   "input": true,
@@ -181,6 +134,53 @@
                     "required": "Please select your Gender"
                   },
                   "type": "select",
+                  "labelPosition": "left-left",
+                  "tabindex": 7
+                }
+              ]
+            },
+            {
+              "components": [
+                {
+                  "input": true,
+                  "tableView": true,
+                  "inputType": "text",
+                  "label": "Email",
+                  "key": "email",
+                  "placeholder": "email@address.com",
+                  "spellcheck": false,
+                  "autocomplete": "off",
+                  "validate": {
+                    "required": true,
+                    "pattern": "^(([^<>()[\\]\\.,;:\\s@']+(\\.[^<>()[\\]\\.,;:\\s@']+)*)|('.+'))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$"
+                  },
+                  "errors": {
+                    "pattern": "Email Address is invalid",
+                    "required": "Please enter your Email Address"
+                  },
+                  "type": "textfield",
+                  "labelPosition": "left-left",
+                  "tabindex": 2
+                },
+                {
+                  "input": true,
+                  "tableView": true,
+                  "inputType": "text",
+                  "label": "Aadhar Number",
+                  "key": "aadhar",
+                  "placeholder": "ex: 234567890123",
+                  "description": "First character should not be 0 or 1 and the next 11 digits should contain only numbers",
+                  "autocomplete": "off",
+                  "spellcheck": false,
+                  "validate": {
+                    "required": true,
+                    "pattern": "^[2-9]{1}[0-9]{3}[0-9]{4}[0-9]{4}$"
+                  },
+                  "errors": {
+                    "pattern": "Enter a valid Aadhaar Card Number",
+                    "required": "Please enter your Aadhaar Card Number"
+                  },
+                  "type": "textfield",
                   "labelPosition": "left-left",
                   "tabindex": 4
                 },
@@ -253,6 +253,25 @@
                   "input": true,
                   "tableView": true,
                   "inputType": "text",
+                  "label": "Area",
+                  "key": "location",
+                  "placeholder": "Area",
+                  "spellcheck": false,
+                  "autocomplete":"off",
+                  "validate": {
+                    "required": true
+                  },
+                  "errors": {
+                    "required": "Please enter your Area"
+                  },
+                  "type": "textfield",
+                  "labelPosition": "left-left",
+                  "tabindex": 12
+                },
+                {
+                  "input": true,
+                  "tableView": true,
+                  "inputType": "text",
                   "label": "Pincode",
                   "key": "pincode",
                   "placeholder": "Pincode",
@@ -268,7 +287,32 @@
                   },
                   "type": "textfield",
                   "labelPosition": "left-left",
-                  "tabindex": 12
+                  "tabindex": 14
+                }
+              ]
+            },
+            {
+              "components": [
+                {
+                  "input": true,
+                  "tableView": true,
+                  "label": "State",
+                  "key": "state",
+                  "placeholder": "State",
+                  "data": {
+                    "url": "https://data.lawe.co.in/states"
+                  },
+                  "dataSrc": "url",
+                  "template": "<span>{{ item.stateName }}</span>",
+                  "validate": {
+                    "required": true
+                  },
+                  "errors": {
+                    "required": "Please select your State"
+                  },
+                  "type": "select",
+                  "labelPosition": "left-left",
+                  "tabindex": 11
                 },
                 {
                   "input": true,
@@ -287,50 +331,6 @@
                   },
                   "errors": {
                     "required": "Please select your City"
-                  },
-                  "type": "select",
-                  "labelPosition": "left-left",
-                  "tabindex": 14
-                }
-              ]
-            },
-            {
-              "components": [
-                {
-                  "input": true,
-                  "tableView": true,
-                  "inputType": "text",
-                  "label": "Area",
-                  "key": "location",
-                  "placeholder": "Area",
-                  "spellcheck": false,
-                  "autocomplete":"off",
-                  "validate": {
-                    "required": true
-                  },
-                  "errors": {
-                    "required": "Please enter your Area"
-                  },
-                  "type": "textfield",
-                  "labelPosition": "left-left",
-                  "tabindex": 11
-                },
-                {
-                  "input": true,
-                  "tableView": true,
-                  "label": "State",
-                  "key": "state",
-                  "placeholder": "State",
-                  "data": {
-                    "url": "https://data.lawe.co.in/states"
-                  },
-                  "dataSrc": "url",
-                  "template": "<span>{{ item.stateName }}</span>",
-                  "validate": {
-                    "required": true
-                  },
-                  "errors": {
-                    "required": "Please select your State"
                   },
                   "type": "select",
                   "labelPosition": "left-left",
@@ -399,6 +399,25 @@
                   "type": "textfield",
                   "labelPosition": "left-left",
                   "tabindex": 16
+                },
+                {
+                  "input": true,
+                  "label": "Verify Phone",
+                  "key": "panel4ColumnsSendOtp",
+                  "size": "md",
+                  "action": "url",
+                  "disableOnInvalid": false,
+                  "theme": "default",
+                  "type": "button",
+                  "customClass": "button button-text",
+                  "headers": [
+                    {
+                      "value": "{{data.mobileNo}}",
+                      "header": "number"
+                    }
+                  ],
+                  "url": "https://data.lawe.co.in/generateOtp",
+                  "tabindex": 17
                 },
                 {
                   "input": true,
@@ -477,25 +496,7 @@
             },
             {
               "components": [
-                {
-                  "input": true,
-                  "label": "Verify Phone",
-                  "key": "panel4ColumnsSendOtp",
-                  "size": "md",
-                  "action": "url",
-                  "disableOnInvalid": false,
-                  "theme": "default",
-                  "type": "button",
-                  "customClass": "button button-text",
-                  "headers": [
-                    {
-                      "value": "{{data.mobileNo}}",
-                      "header": "number"
-                    }
-                  ],
-                  "url": "https://data.lawe.co.in/generateOtp",
-                  "tabindex": 17
-                },
+              
                 {
                   "input": true,
                   "tableView": true,
@@ -584,6 +585,51 @@
 									"labelPosition": "left-left",
 									"tabindex": 24
 								},
+								{
+									"input": true,
+									"tableView": true,
+									"label": "Practicing From",
+									"key": "practisingFrom",
+									"placeholder": "Practicing From",
+									"format": "dd-MM-yyyy",
+									"enableDate": true,
+									"enableTime": false,
+									"datepickerMode": "day",
+									"datePicker": {
+										"showWeeks": true,
+										"startingDay": 0,
+										"initDate": "",
+										"minMode": "day",
+										"maxMode": "year",
+										"yearRows": 4,
+										"yearColumns": 5,
+										"minDate": null,
+										"maxDate": "moment().add(0, 'days')",
+										"datepickerMode": "day"
+									},
+									"timePicker": {
+										"hourStep": 1,
+										"minuteStep": 1,
+										"showMeridian": true,
+										"readonlyInput": false,
+										"mousewheel": true,
+										"arrowkeys": true
+									},
+									"validate": {
+										"required": true,
+                    "custom": "valid = ((moment(input).diff(moment(data.dob), 'days'))>= 7670) ? true : 'Practicing From date is against the user DOB date(age must be greater than 21)';"
+									},
+									"errors": {
+										"required": "Please select your Practising From Date"
+									},
+									"type": "datetime",
+									"labelPosition": "left-left",
+									"tabindex": 26
+								}
+							]
+						},
+						{
+							"components": [
 								{
 									"input": true,
 									"tableView": true,
@@ -756,51 +802,6 @@
 										"required": "Please select the Languages that you know"
 									},
 									"type": "select",
-									"labelPosition": "left-left",
-									"tabindex": 26
-								}
-							]
-						},
-						{
-							"components": [
-								{
-									"input": true,
-									"tableView": true,
-									"label": "Practicing From",
-									"key": "practisingFrom",
-									"placeholder": "Practicing From",
-									"format": "dd-MM-yyyy",
-									"enableDate": true,
-									"enableTime": false,
-									"datepickerMode": "day",
-									"datePicker": {
-										"showWeeks": true,
-										"startingDay": 0,
-										"initDate": "",
-										"minMode": "day",
-										"maxMode": "year",
-										"yearRows": 4,
-										"yearColumns": 5,
-										"minDate": null,
-										"maxDate": "moment().add(0, 'days')",
-										"datepickerMode": "day"
-									},
-									"timePicker": {
-										"hourStep": 1,
-										"minuteStep": 1,
-										"showMeridian": true,
-										"readonlyInput": false,
-										"mousewheel": true,
-										"arrowkeys": true
-									},
-									"validate": {
-										"required": true,
-                    "custom": "valid = ((moment(input).diff(moment(data.dob), 'days'))>= 7670) ? true : 'Practicing From date is against the user DOB date(age must be greater than 21)';"
-									},
-									"errors": {
-										"required": "Please select your Practising From Date"
-									},
-									"type": "datetime",
 									"labelPosition": "left-left",
 									"tabindex": 25
 								},
